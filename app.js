@@ -18,7 +18,7 @@ app.use(express.urlencoded());
 app.use(userRouter);
 app.use("/host", hostRouter);
 
-app.use(express.static(path.join(rootDir, 'public')))
+app.use(express.static(path.join(rootDir, 'public')));
 
 app.use(errorController.pageNotFound);
 
